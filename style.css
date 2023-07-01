@@ -19,7 +19,6 @@
     position: relative;
     width: 330px;
     height: 330px;
-    /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,8 +85,8 @@
  .container .wheel .number span{
     position: relative;
     transform: rotate(45deg);
-    font-size: 2em;
-    font-weight: 700;
+    /* font-size: 2em;
+    font-weight: 700; */
     color: #fff;
     text-shadow: 3px 5px 2px rgba(0,0 ,0,0.15);
  }
@@ -100,20 +99,26 @@
     margin-left: 5px;
  }
 
+ .text-spin{
+   margin-top: 500px;
+   color: white;
+   font-size: 25px;
+
+ }
  /**************************** Responsive Styles *************************/
 
 /* Mobile devices */
 @media (max-width: 767px) {
    .container {
-     width: 15%;
-     height: 15%;
+     width: 330px;
+     height: 330px;
      font-size: 12px;
    }
  }
  
  /* Tablets */
  @media (min-width: 768px) and (max-width: 1023px) {
-   .container .spinBtn {
+   .container{
      width: 400px;
      height: 400px;
    }
