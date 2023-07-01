@@ -11,19 +11,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 80vh;
     background: #333;
 
  }
  .container{
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 330px;
+    height: 330px;
     /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
     align-items: center;
  }
+
+ /* **********************************  Spinner Btn ************************* */
  .container .spinBtn{
     text-transform: uppercase;
     position: absolute;
@@ -54,6 +56,7 @@
     clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
  }
 
+ /* **********************  Wheel Scroll ****************************** */
  .container .wheel{
     position: absolute;
     top: 0;
@@ -97,11 +100,11 @@
     margin-left: 5px;
  }
 
- /* Responsive Styles */
+ /**************************** Responsive Styles *************************/
 
 /* Mobile devices */
 @media (max-width: 767px) {
-   .container .spinBtn {
+   .container {
      width: 15%;
      height: 15%;
      font-size: 12px;
@@ -109,17 +112,9 @@
  }
  
  /* Tablets */
- /* @media (min-width: 768px) and (max-width: 1023px) {
+ @media (min-width: 768px) and (max-width: 1023px) {
    .container .spinBtn {
-     width: 10%;
-     height: 10%;
+     width: 400px;
+     height: 400px;
    }
  }
-  */
- /* Desktop devices */
- /* @media (min-width: 1024px) {
-   .container .spinBtn {
-     width: 8%;
-     height: 8%;
-   }
- } */
